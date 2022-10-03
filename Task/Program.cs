@@ -27,3 +27,13 @@ void NewArray (string [] arr)
     }
     Console.WriteLine("]");
 }
+
+Console.WriteLine("Введите целое число - кол-во элементов массива");
+int N = Convert.ToInt32(Console.ReadLine());
+string [] array = new string[N];
+
+FillArray(array);
+Console.WriteLine("Начальный массив строк: ");
+PrintArray(array);
+Console.WriteLine("Массив строк после преобразования: ");
+NewArray(array);
