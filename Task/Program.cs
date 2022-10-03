@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿void PrintArray(string[] arr) 
+{
+    Console.Write("[");
+    for (int i = 0; i < arr.Length -1; i++)
+    {
+        Console.Write(arr[i] + " ");
+    }
+    Console.WriteLine(arr[arr.Length - 1] + "] ");
+}
+void FillArray(string[] arr) 
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write($"Введите {i+1}-й элемент массива: ");
+        arr[i] = Console.ReadLine();
+    }
+}
