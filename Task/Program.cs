@@ -15,3 +15,15 @@ void FillArray(string[] arr)
         arr[i] = Console.ReadLine();
     }
 }
+void NewArray (string [] arr)
+{
+    Console.Write("[");
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <= 3)
+        {
+            Console.Write(arr[i] + " ");
+        }
+    }
+    Console.WriteLine("]");
+}
